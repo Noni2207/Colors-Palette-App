@@ -13,6 +13,15 @@ let initialColors;
 
 
 //Function
+/* //Color generator without any library
+function generateHex() {
+    const letters = "#0123456789ABCDEF";
+    let hash = "#";
+    for( let i=0; i<6; i++) {
+        hash += letters[Math.floor(Math.random() * 16)];
+    }
+    return hash;
+} */
 
 // Colors generator with chroma library
 
