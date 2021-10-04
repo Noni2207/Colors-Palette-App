@@ -118,6 +118,14 @@ function hslControls(e) {
     //Colorize inputs/sliders
     colorizeSliders(color, hue, brightness, saturation);
 }
+function updateTextUI(index) {
+    const activeDiv = colorDives[index];
+    const color = chroma(activeDiv.style.backgroundColor);
+    const textHex = activeDiv.querySelector('h2');
+    const icons = activeDiv.querySelectorAll('.controls button');
+    textHex.innerText = color.hex();
+}
+
 
 randomColors();
 
