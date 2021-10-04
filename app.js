@@ -10,6 +10,10 @@ let initialColors;
  sliders.forEach(slider => {
   slider.addEventListener("input", hslControls);
 });
+//Update h2 
+sliders.forEach(slider => {
+   slider.addEventListener("input", hslControls);
+});
 
 
 //Function
